@@ -1,4 +1,3 @@
-#config/deploy.rb
 require "bundler/capistrano"
 load "deploy/assets"
 
