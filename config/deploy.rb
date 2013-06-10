@@ -3,7 +3,7 @@ load "deploy/assets"
 
 # Git repository
 set :scm,         "git"
-set :repository,  "git@github.com:xxxcaqui/pic_share.git"
+set :repository,  "git://github.com/xxxcaqui/pic_share.git"
 set :branch,      "master"
 set :ssh_options, { forward_agent: true }
 
