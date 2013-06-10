@@ -5,11 +5,11 @@ load "deploy/assets"
 # Git repository
 set :scm,         "git"
 set :repository,  "git@github.com:xxxcaqui/pic_share.git"
-#set :branch,      "master"
+set :branch,      "master"
 set :ssh_options, { forward_agent: true }
 
 # Server setting
-ec2 = "rails@ec2-54-249-72-143.ap-northeast-1.compute.amazonaws.com"
+ec2 = "ec2-54-249-72-143.ap-northeast-1.compute.amazonaws.com"
 role :web, ec2
 role :app, ec2
 role :db,  ec2, :primary => true
